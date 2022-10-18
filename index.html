@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hook javascript todo List</title>
+    <link rel="stylesheet" type="text/css" href="ajouts/bootstrap.min.css">
+     <link rel="stylesheet" type="text/css" href="ajouts/icomoon.css">
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+       <link rel="stylesheet" href="ajouts/style.css">
+</head>
+<body>
+    <div>
+       <header class="header"><h1>Hook javascript todo List</h1></header> 
+    </div>
+    <div>
+        <form >
+            <input type="text" class="todo_input">
+             <button type="submit" class="todo_button"><i class="fa-solid fa-square-plus"></i></button>
+             <div class="select">
+                <select name="todos" class="filter_todo">
+                    <option value="all">Toutes</option>
+                    <option value="completed">Complétée</option>
+                    <option value="uncompleted">A faire</option>
+
+                </select>
+             </div>
+             
+        </form>
+    </div>
+    <div class="todo-container">
+        <ul class="todo_list"></ul>
+    </div>
+
+
+
+
+<script src="./app.js"></script>
+ <script type="text/javascript" src="ajouts/jquery.min.js"></script>
+  <script type="text/javascript" src="ajouts/bootstrap.min.js"></script>
+</body>
+</html>
