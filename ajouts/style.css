@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* la ligne qui suit permet de faire =>  je refuse d'avoir d'autre espacement */
+    box-sizing: border-box;   
+}
+body{
+    background-image: linear-gradient(120deg, #16166f, #061048);
+    color: #ffe100;
+    font-family:"poppins", sans-serif;
+    /* la vue au niveau de la hauteur*/
+    min-height: 100vh;
+}
+.header
+{
+    font-size: 1.5rem;
+}
+.header,form
+{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form input, form button{
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background: #fff;
+}
+form button
+{
+    color: #061048;
+    background: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+form button:hover
+{
+    background: #061048;
+    color: #ffe100;
+}
+.todo-container
+{
+    display: flex!important;
+    justify-content: center!important;
+    align-items: center!important;
+}
+.todo_list
+{
+    min-width: 30%;
+    list-style: none;
+}
+/*ceci vient directement de balises créer via js*/
+.todo
+{
+    margin: 0.5rem;
+    background: #fff;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+.todo li 
+{
+    flex: 1;
+}
+.trash_btn, .complete_btn
+{
+    background: #ffe100;
+    color: black;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.complete_btn
+{
+    background: rgba(73, 204, 73);
+}
+.todo_items
+{
+    padding: 0rem 0.5rem;
+}
+.completed
+{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+.fall
+{
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
+select 
+{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline:none;
+    box-shadow: none;
+    border: none;
+}
+.select
+{
+    position: relative;
+    margin: 1rem;
+    overflow: hidden;
+}
+select
+{
+    color:#16166f;
+    width: 10rem;
+    cursor: pointer;
+    padding: 1rem;
+}
+/* ajout d'un élement*/
+.select::after
+{
+    content:"\25BC";
+    position: absolute;
+    background: #16166f;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.select:hover::after
+{
+    background: #fff;
+    color: #16166f;
+}
